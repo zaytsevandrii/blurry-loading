@@ -18,7 +18,7 @@ function App() {
   
     return (
         <>
-            <section className="bg"></section>
+            <section className="bg" style={{filter:`blur(${scale(load,0,100,30,0)}px)`}}></section>
             <div className="loading-text" style={{opacity:`${scale(load,0,100,1,0)}`}}>{load}%</div>
         </>
     )
